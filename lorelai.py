@@ -1,45 +1,46 @@
-# import the necessary packages
+# import packages
 from kmeans import KMeans
 import matplotlib.pyplot as plt
 import argparse
 import helper
 import cv2
 
-# construct the argument parser and parse the arguments
+# argument parser 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = True, help = "Path to the image")
-ap.add_argument("-c", "--clusters", required = True, type = int,
-	help = "# of clusters")
+ap.add_argument("-i", "--image", required = True)
+ap.add_argument("-c", "--clusters", required = True, type = int)
 args = vars(ap.parse_args())
-# load the image and convert it from BGR to RGB so that
-# we can dispaly it with matplotlib
+
+# Load the image
+# When the image file is read with the OpenCV function imread(), the order of colors is BGR (blue, green, red).
+# Therefore, if you want to use OpenCV function, you need to convert BGR and RGB.
+
 image = cv2.imread(args["image"])
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
 # show our image
 plt.figure()
 plt.axis("off")
 plt.imshow(image)
 
 
-# reshape the image to be a list of pixels
+# reshape the image
 image = image.reshape((image.shape[0] * image.shape[1], 3))
 
 
-# cluster the pixel intensities
-# k = KMeans(n_clusters = args["clusters"])
-# clt.fit(image)
+# Calling the Kmeans function
 k = KMeans(K=args["clusters"], max_iters=150)
 labels, centroids = k.predict(image)
 
-# build a histogram of clusters and then create a figure
-# representing the number of pixels labeled to each color
+# build a histogram of clusters
 hist = helper.centroid_histogram(labels)
+# bar of the number of pixels labeled to each color
 bar = helper.plot_colors(hist, centroids)
-# show our color bart
+# show color pallette bar
 plt.figure()
 plt.axis("off")
 plt.imshow(bar)
 plt.show()
 
-
+# To run
 # color_kmeans.py --image images/jp.png --clusters 3
