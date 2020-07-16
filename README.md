@@ -1,4 +1,4 @@
-# Lorelai
+# Lorelai (Personal Project)
 
 ## Idea:
 
