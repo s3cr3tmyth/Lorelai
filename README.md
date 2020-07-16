@@ -1,4 +1,4 @@
-### Lorelai
+# Lorelai
 
 ## Idea:
 
@@ -17,19 +17,19 @@ But I decided to do it from scratch using Computer Vision library and numpy.
 
 ## Steps :
 
-# 1) Get High resolution version of album art possible
+### 1) Get High resolution version of album art possible
 
 I used this wonderful site created by Ben Dodson* which lets you download high-res version of artwork from itunes.
 
-# 2) Convert images to vectors
+### 2) Convert images to vectors
 
-# 3) Write Kmeans from scratch
+### 3) Write Kmeans from scratch
 
-# 4) Write helper function to count the number of pixels that belong to each cluster and generate histogram
+### 4) Write helper function to count the number of pixels that belong to each cluster and generate histogram
 
-# 5) Write another helper function to generate barplot displaying how many pixels were assigned to each cluster based on the output of the histogram
+### 5) Write another helper function to generate barplot displaying how many pixels were assigned to each cluster based on the output of the histogram
 
-# 6) Tie everything together and viola!
+### 6) Tie everything together and viola!
 
 
 ## To run:
@@ -44,8 +44,8 @@ I used this wonderful site created by Ben Dodson* which lets you download high-r
 
 ## Refrernces:
 
-# 1) https://www.pyimagesearch.com/2014/05/26/opencv-python-k-means-color-clustering/ (For the helper functions)
+### 1) https://www.pyimagesearch.com/2014/05/26/opencv-python-k-means-color-clustering/ (For the helper functions)
 
-# 2) https://www.nme.com/news/music/fleet-foxes-31-1324001
+### 2) https://www.nme.com/news/music/fleet-foxes-31-1324001
 
-# 3) https://bendodson.com/projects/itunes-artwork-finder/
+### 3) https://bendodson.com/projects/itunes-artwork-finder/
