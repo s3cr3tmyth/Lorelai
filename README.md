@@ -23,7 +23,12 @@ I used this wonderful site created by Ben Dodson* which lets you download high-r
 
 #### 2) Convert images to vectors
 
+When Loading the image with the OpenCV function imread(), the order of colors is BGR (blue, green, red).
+Therefore, if you want to use OpenCV function, you need to convert BGR and RGB.
+
 #### 3) Write Kmeans from scratch
+
+Implement K-means from scratch using numpy
 
 #### 4) Write helper function to count the number of pixels that belong to each cluster and generate histogram
 
@@ -34,7 +39,7 @@ I used this wonderful site created by Ben Dodson* which lets you download high-r
 
 ## To run:
 
-1) clone this repo
+1) Clone this repo
 
 2) Run lorelai.py by passing two arguments image path and number of clusetrs. 
 
