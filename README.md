@@ -43,12 +43,10 @@ Implement K-means from scratch using numpy
 
 2) Run lorelai.py by passing two arguments image path and number of clusetrs. 
 
-(Change the number of clusters for more numnber of palettes)
-
 ```
 lorelai.py --image artwork/*.png --clusters 5
 ```
-
+(Change the number of clusters for more numnber of palettes)
 
 ## Results 
 
