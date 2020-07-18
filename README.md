@@ -45,7 +45,7 @@ Write another helper function to generate barplot displaying how many pixels wer
 
 1) Clone this repo.
 
-2) Run lorelai.py by passing two arguments image path and number of clusetrs. 
+2) Run lorelai.py by passing two arguments; image path and number of clusters. 
 
 ```
 lorelai.py --image artwork/*.png --clusters 5
