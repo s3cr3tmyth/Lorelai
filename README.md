@@ -63,9 +63,10 @@ lorelai.py --image artwork/*.png --clusters 5
 
 
 
-## Refrernces:
+## References:
 
-#### 1) https://www.pyimagesearch.com/2014/05/26/opencv-python-k-means-color-clustering/ (For the helper functions)
+#### 1) https://www.pyimagesearch.com/2014/05/26/opencv-python-k-means-color-clustering/ 
+(For the helper functions)
 
 #### 2) https://www.nme.com/news/music/fleet-foxes-31-1324001
 
