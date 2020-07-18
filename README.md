@@ -52,7 +52,11 @@ lorelai.py --image artwork/*.png --clusters 5
 
 ## Results 
 
-
+![GitHub Logo](/results/1111.png)
+![GitHub Logo](/results/2222.png)
+![GitHub Logo](/results/3333.png)
+![GitHub Logo](/results/4444.png)
+![GitHub Logo](/results/5555.png)
 
 
 ## Refrernces:
