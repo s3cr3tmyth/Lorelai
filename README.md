@@ -10,7 +10,7 @@ Project name stems from song named 'Lorelai' from Fleet Foxes Helplessness Blues
 
 While braistorming ways to automatically generate the colour palettes from the album covers so that a colour palette could be created from any given image, I realised that this could be only done in an unsupervised manner. 
 
-Clustering algorithms such as K-Means segment features (colors in this case) from data (image) based on similar characterstics (distance).
+Clustering algorithms such as K-Means segment features (to cluster RGB pixel intensities in this case) from data (image) based on similar characterstics (distance).
 
 There are various python libraies present which can do this for you. (e.g colorgram which is a Python library that lets you extract colors from images)
 But I decided to do it from scratch using OpenCV and numpy. 
